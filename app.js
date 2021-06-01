@@ -1,6 +1,6 @@
 function test() {
-  const A = -1;
-  const B = 3;
-  const C = 8;
+  const A = 0;
+  const B = 10;
+  const C = 3;
   return null;
 }
