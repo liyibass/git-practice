@@ -1,5 +1,5 @@
 function test() {
-  const A = 0;
+  const A = 8;
   const B = 10;
   const C = 3;
   return null;
