@@ -1,4 +1,4 @@
 function test() {
-  const A = 1;
+  const A = 2;
   return null;
 }
