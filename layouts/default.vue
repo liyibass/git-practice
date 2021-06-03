@@ -33,7 +33,7 @@ html {
   margin: 0;
 }
 
-.button--grey {
+button{
   border-radius: 4px;
   border: 1px solid #35495e;
   color: #fff;
@@ -43,8 +43,9 @@ html {
   margin-top: 10px;
 }
 
-.button--grey:hover {
+button:hover {
   color: #35495e;
   background-color: #fff;
+  cursor: pointer;
 }
 </style>

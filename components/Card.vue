@@ -18,6 +18,11 @@
 </template>
 
 <style scoped>
+    button {
+        padding: 5px 5px;
+        background-color: white;
+        color: #35495e;
+    }
     .card__container {
         margin-top: 20px;
         padding: 20px;
