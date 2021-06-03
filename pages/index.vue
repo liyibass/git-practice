@@ -1,10 +1,13 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        nuxt-contacts
-      </h1>
+      <div class="title">
+        好耶
+      </div>
+      <div class='subtitle'>
+        「所有理解一切的人，只能思考萬聖節直至死亡。」- 《電鋸人》
+      </div>
+      <InputGroup />
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -28,6 +31,7 @@
 </template>
 
 <script>
+
 export default {}
 </script>
 
@@ -37,8 +41,7 @@ export default {}
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin-top: 32px;
 }
 
 .title {
@@ -54,17 +57,17 @@ export default {}
     sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 50px;
   color: #35495e;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .links {
