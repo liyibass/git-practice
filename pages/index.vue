@@ -4,28 +4,12 @@
       <div class="title">
         好耶
       </div>
-      <div class='subtitle'>
+      <div class="subtitle">
         「所有理解一切的人，只能思考萬聖節直至死亡。」- 《電鋸人》
       </div>
       <InputGroup />
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <Card />
+      <Card />
     </div>
   </div>
 </template>
