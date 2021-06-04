@@ -30,6 +30,10 @@
   </div>
 </template>
 
+<script>
+export default {}
+</script>
+
 <style scope>
   .input__container {
     margin: 24px 0;

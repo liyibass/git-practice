@@ -2,8 +2,10 @@
     <div class="card__container">
         <div class="card__title">
             <div class="title__name">
-                <h3>我是名字 / 我是職稱</h3>
-                <img src="../static/mail.svg" width="20px"/>
+                <h3>{{ contact.name }} / {{ contact.job }}</h3>
+                <a :href="'mailto:'+contact.email">
+                    <img src="../static/mail.svg" width="20px">
+                </a>
             </div>
             <div>
                 <button>編輯</button>
@@ -11,11 +13,20 @@
             </div>
         </div>
         <div class="card__content">
-            <span class="attribute">#我是屬性</span>
-            <span class="attribute">#我是屬性</span>
+            <span class="attribute" v-for="characteristic of contact.characteristic" :key="characteristic">
+                # {{ characteristic }}
+            </span>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+  props: {
+    contact: Object
+  }
+}
+</script>
 
 <style scoped>
     button {
@@ -41,14 +52,16 @@
         margin-top: 10px;
     }
     .attribute {
-        background-color: #597fad;
-        padding: 5px;
+        background-color: #426085;
+        padding: 5px 10px;
         font-size: 12px;
         border-radius: 10px;
         color: white;
+        margin-right: 10px;
     }
     .title__name {
         display: flex;
+        align-items: flex-end;
     }
     img {
         margin-left: 10px;
